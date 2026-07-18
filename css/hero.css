@@ -1,0 +1,125 @@
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    padding:80px 0;
+
+}
+
+.hero-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text span{
+
+    color:#2563eb;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    max-width:550px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-secondary{
+
+    border:2px solid #2563eb;
+
+    color:#2563eb;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+.btn-secondary:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:500px;
+
+}

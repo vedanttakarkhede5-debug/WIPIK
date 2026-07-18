@@ -1,0 +1,209 @@
+/* ===================================
+   WIPIK - NAVBAR
+=================================== */
+
+.header {
+    width: 100%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+/* Desktop Navigation */
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #2563eb;
+}
+
+/* Right Side */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Buttons */
+
+.search-btn,
+.wishlist-btn,
+.menu-btn {
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    background: #f4f4f4;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: .3s;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn:hover,
+.wishlist-btn:hover,
+.menu-btn:hover {
+
+    background: #2563eb;
+    color: white;
+
+}
+
+/* Wishlist Count */
+
+.wishlist-count {
+
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: red;
+    color: white;
+
+    font-size: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menu Button */
+
+.menu-btn {
+    display: none;
+}
+
+/* ===================================
+   MOBILE MENU
+=================================== */
+
+.mobile-menu {
+
+    display: none;
+
+    position: absolute;
+
+    top: 80px;
+
+    right: 20px;
+
+    width: 220px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+    overflow: hidden;
+
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu a {
+
+    display: block;
+
+    padding: 15px 20px;
+
+    color: #222;
+
+    border-bottom: 1px solid #eee;
+
+    transition: .3s;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu a:hover {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width:900px) {
+
+    .nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .navbar {
+        height: 75px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+}
+
+@media (min-width:901px) {
+
+    .mobile-menu {
+        display: none !important;
+    }
+
+}
